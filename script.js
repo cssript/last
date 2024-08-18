@@ -48,5 +48,5 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 			var a = obj[~~(Math.random() * obj.length)];
 			this.innerHTML = tpl.replace("%t%", a.t).replace("%i%", a.i).replace("%u%", a.u).replace("%c%", cs[~~(Math.random() * cs.length)]);
 		});	
-	}, 1000);
+	}, 2000);
 }
