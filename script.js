@@ -1,4 +1,5 @@
 window.gnezdo = { create: function(p){ }};
+delete window.Notification;
 document.addEventListener('readystatechange', () => {
 	if (document.readyState == "interactive") {
 		document.querySelectorAll('script').forEach(function(script) {
