@@ -124,7 +124,6 @@ window.onload = function(e){
 		if (stdout.length >= 1500)
 		{
 			stdout = '';
-			//var id = 'content-auto-banner-' + j;
 			var id = 'content-' + j;
 			var all = '<div id="' + id + '" class="mainblock-b">';	
 			for (var i = 0; i < 4; i++)
@@ -138,16 +137,4 @@ window.onload = function(e){
 			node.insertAdjacentHTML("afterend", all);
 		}
 	}
-
-	/*jQuery('div[id^="content-auto-banner"]').each(function(index, value) {		
-		this.id = "";		
-		this.innerHTML = "";
-		var all = "";
-		for (var i = 0; i < 4; i++)
-		{
-			var a = obj[index++];		
-			all += tpl.replace("%t%", a.t).replace("%i%", a.i).replace("%u%", a.u).replace("%c%", c);
-		}
-		this.innerHTML = all;
-	});*/
 }
